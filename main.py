@@ -9,3 +9,13 @@ import pandas as pd #p pandas nos ayuda a manejar datos en tablas como si fuera 
 import nltk #nltk es un libreria para procesar texto y analizar palabras
 from nltk.tokenize import word_tokenize # Se usa para dividir un texto en palabras individuales
 from nltk.corpus import wordnet # Nos ayuda a encontrar sinonomos de palabras
+
+# Descargamos las herramientas necesarias de nltk para el analisis de palabras
+
+nltk.download('punkt') # Herramienta para dividir texto en palabras
+nltk.download('wordnet') # Herramienta para encontrar sinonomos de palabras en ingles
+
+# Indicamos la ruta donde ntlk buscara los datos descargados en nuestro computador
+nltk.data.path.append('C:\Users\mauri\AppData\Roaming\nltk_data')
+
+# Funcion para cargar las peliculas desde un archivo CSV 
